@@ -30,32 +30,32 @@
   }
   
   #subjects {
-    top: 230px;
+    top: 250px;
     background-color: Orange
   }
 
   #sessions {
-    top: 290px;
+    top: 310px;
     background-color: Tomato
   }
 
   #tags {
-    top: 350px;
+    top: 370px;
     background-color: SlateBlue
   }
 
   #days {
-    top: 410px;
+    top: 430px;
     background-color: Violet
   }
 
   #locations {
-    top: 515px;
+    top: 535px;
     background-color: #555
   }
 
   #timetables {
-    top: 575px;
+    top: 595px;
     background-color: brown
   }
 
