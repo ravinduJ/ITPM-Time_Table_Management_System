@@ -1,3 +1,4 @@
+/*nav bar css*/
 #mySidenav a {
     position: absolute;
     left: -80px;
@@ -59,7 +60,8 @@
     background-color: brown
   }
 
-  
+    /*Table css*/
+      /*lecturer table css*/
 
   #lecturer {
     font-family: Arial, Helvetica, sans-serif;
@@ -88,6 +90,8 @@
     color: white;
   }
 
+  /*subject table css*/
+
   #subject {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -114,6 +118,8 @@
     background-color: #4CAF50;
     color: white;
   }
+
+    /*button css*/
 
   .add_button {
     background-color: #4CAF50; /* Green */
@@ -172,6 +178,8 @@
     color: white;
   }
 
+  /*header css*/
+
   .lecturerheader {
     padding:5px;
     text-align: center;
@@ -194,3 +202,59 @@
     margin-right: 100px;
   }
   
+  .sessionheader {
+    padding:5px;
+    text-align: center;
+    background: Tomato;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  /*tab css*/
+  * {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+  
+
+/* Style tab links */
+
+.tablink_first {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 100px;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 200px;
+}
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 280px;
+  }
+
+  .tablink:hover {
+    background-color: #777;
+  }
+
+/* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
