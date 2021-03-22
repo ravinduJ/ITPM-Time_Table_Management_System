@@ -5,142 +5,114 @@
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
   <a href="index.html" id="home">Home</a>
   <a href="manage_lecturer.html" id="lecturers">Lecturers</a>
-  <a href="#" id="students">Students</a>
+  <a href="view-student-groups.html" id="students">Student Groups</a>
+  <a href="#" id="subjects">Subjects</a>
   <a href="manage_subject.html" id="subjects">Subjects</a>
   <a href="manage_session.html" id="sessions">Sessions</a>
   <a href="#" id="tags">Tags</a>
-  <a href="Manage Working Days & Hours.html" id="days">Working Days & Hours</a>
+  <a href="#" id="days">Working Days & Hours</a>
   <a href="Add Location.html" id="locations">Locations</a>
   <a href="#" id="timetables">Time Tables</a>
 
 </div>
 
-<div class="subjectsheader">
-    <h1>Manage Subjects</h1>
+<div class="lecturerheader">
+    <h1>Manage Working Days & Hours</h1>
 </div>
 
-<table id="subject">
+<table id="lecturer">
   <tr>
-    <th>Offered Year</th>
-    <th>Offered Semester</th>
-    <th>Subject Name</th>
-    <th>Subject Code</th>
-    <th>Lecture hours</th>
-    <th>Tutorial Hours</th>
-    <th>Lab Hours</th>
-    <th>Evaluation Hours</th>
-    <th>Action</th>
+    <th>ID</th>
+    <th>No of Working Days</th>
+    <th>Working Days</th>
+    <th>Working Hours Per Days </th>
   </tr>
   <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>050</td>
+    <td>3</td>
+    <td>Monday, Thursday, Saturday</td>
+    <td>8 Hours</td>
+ 
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>055</td>
+    <td>4</td>
+    <td>Monday, Tuesday, Wednesday, Friday, Saturday</td>
+    <td>7 Hours</td>
+  
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
+    <td>042</td>
     <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>Saturday, Sunday</td>
+    <td>SE</td>
+   
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>100</td>
+    <td>5</td>
+    <td>Monday, Tuesday, Wednesday, Thursday, Friday</td>
+    <td>9 Hours 30 Minutes</td>
+   
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>033</td>
+    <td>3</td>
+    <td>Thursday, Friday, Saturday</td>
+    <td>7 Hours</td>
+    
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
-    <td>2</td>
+    <td>102</td>
     <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>Sunday</td>
+    <td>3 Hours</td>
+   
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
+    <td>001</td>
     <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>Monday, Saturday</td>
+    <td>5 Hours</td>
+ 
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
     </td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>ITPM</td>
-    <td>IT3040</td>
-    <td>10</td>
-    <td>10</td>
-    <td>0</td>
-    <td>30</td>
+    <td>060</td>
+    <td>6</td>
+    <td>Monday, Tuesday, Wednesday, Thursday, Friday, Sunday</td>
+    <td>6 Hours 30 Minutes</td>
+
     <td>
         <button class="button button2">Edit</button>
         <button class="button button3">Delete</button>
@@ -149,7 +121,10 @@
   </tr>
 </table>
 
-<button class="add_button">Add New Subject</button>
+<div class>
+
+<a href="Add Working Days & Hours.html"><button class="add_button">Add Working Days & Hours</button></a>
+ </div>
 
 </body>
 </html>
