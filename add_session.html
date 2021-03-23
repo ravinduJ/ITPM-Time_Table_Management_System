@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header class="header" role="banner">
+        <h1 class="logo">
+          <a href="#">Timetable <span>Manager</span></a>
+        </h1>
+        <div class="nav-wrap">
+          <nav class="main-nav" role="navigation">
+            <ul class="unstyled list-hover-slide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="manage_lecturer.html">Lecturers</a></li>
+              <li><a href="view-student-groups.html">Student Groups</a></li>
+              <li><a href="manage_subject.html">Subjects</a></li>
+              <li><a href="manage_session.html">Sessions</a></li>
+              <li><a href="#">Tags</a></li>
+              <li><a href="Manage Working Days & Hours.html">Days & Hours</a></li>
+              <li><a href="Manage Location.html">Locations</a></li>
+              <li><a href="#">Time Tables</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      
+<!-- Form-->
+<div class="form">
+  <div class="form-toggle"></div>
+  <div class="form-panel one">
+    <div class="form-header">
+      <h1>Session Detail</h1>
+    </div>
+    <div class="form-content">
+      <form>
+        <div class="form-group">
+            <label for="lecturer">Lecturer</label>
+            <select name="lecturer" id="lecturer" required="required">
+              <!-- <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option> -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="group">Group</label>
+            <select name="group" id="group" required="required">
+              <!-- <option value="1">1</option>
+              <option value="2">2</option> -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required="required">
+              <!-- <option value="1">1</option>
+              <option value="2">2</option> -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subject_code">Subject Code</label>
+            <select name="subject_code" id="subject_code" required="required">
+              <!-- <option value="1">1</option>
+              <option value="2">2</option> -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tag">Tag</label>
+            <select name="tag" id="tag" required="required">
+              <!-- <option value="1">1</option>
+              <option value="2">2</option> -->
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="student_count">Student Count</label>
+          <input type="text" id="student_count" name="student_count" required="required"/>
+        </div>
+        <div class="form-group">
+            <label for="duration">Duration (Hrs)t</label>
+            <input type="number" id="duration" name="duration" required="required"/>
+          </div>
+       
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="form-group">
+          <button type="clear">Clear</button>
+        </div>
+      </div>
+      
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
