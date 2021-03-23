@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <h1 class="logo">
+      <a href="#">Timetable <span>Manager</span></a>
+    </h1>
+    <div class="nav-wrap">
+      <nav class="main-nav" role="navigation">
+        <ul class="unstyled list-hover-slide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="manage_lecturer.html">Lecturers</a></li>
+          <li><a href="view-student-groups.html">Student Groups</a></li>
+          <li><a href="manage_subject.html">Subjects</a></li>
+          <li><a href="manage_session.html">Sessions</a></li>
+          <li><a href="#">Tags</a></li>
+          <li><a href="Manage Working Days & Hours.html">Days & Hours</a></li>
+          <li><a href="Manage Location.html">Locations</a></li>
+          <li><a href="#">Time Tables</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div class="sessionheader">
+    <h1>Manage Session</h1>
+</div>
+
+<button class="tablink_first" onclick="openPage('le')">Session</button>
+<button class="tablink" onclick="openPage('consecutive')" id="defaultOpen">Consecutive Session</button>
+<button class="tablink" onclick="openPage('parallel')">Parallel Session</button>
+<button class="tablink" onclick="openPage('none_overlapping')">None-Overlapping Session</button>
+<a href="Manage Not Available Time Allocation.html"><button class="tablink" onclick="openPage('not_available')">Not Available Time</button></a>
+
+
+  <table id="session">
+    <tr>
+      <th>Lecturer</th>
+      <th>Group</th>
+      <th>Subject</th>
+      <th>Tag </th>
+      <th>No of Students</th>
+      <th>Duration (Hr)</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Sarath Jayakodi</td>
+      <td>Y3S2.1</td>
+      <td>ITPM</td>
+      <td>Lecture</td>
+      <td>120</td>
+      <td>2</td>
+   
+      <td>
+          <button class="button button2">Edit</button>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+  </table>
+
+
+<a href="manage_session rooms.html"><button class="add_button">Add New Lecture</button></a>
+
+</body>
+</html>

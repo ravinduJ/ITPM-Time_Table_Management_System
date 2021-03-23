@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/StudentStyle/add-student-style.css">
-    <script  defer src="Javascript/add-student-group.js"></script>
-    <script defer src="main.js"></script>
 </head>
 <body>
     
-    <div class="group">
-        <h3>Add Student Groups</h3>
+    <div class="lecturerheader">
+        <h1>Edit Session Rooms</h1>
     </div>
     <div id="mySidenav" class="sidenav">
         <a href="index.html" id="home">Home</a>
         <a href="manage_lecturer.html" id="lecturers">Lecturers</a>
         <a href="view-student-groups.html" id="students">Student Groups</a>
         <a href="#" id="subjects">Subjects</a>
-        <a href="#" id="sessions">Sessions</a>
+        <a href="manage_session.html" id="sessions">Sessions</a>
         <a href="#" id="tags">Tags</a>
         <a href="Manage Working Days & Hours.html" id="days">Working Days & Hours</a>
         <a href="Add Location.html" id="locations">Locations</a>
@@ -36,17 +34,17 @@
             <div class="inner-container m-5">
                 <div class="row p-4">
                     <div class="col">
-                        <label for="">Academic Year</label>
+                        <label for="">Building</label>
                     </div>
                     <div class="col">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Academic Year
+                              Select Building
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                              <a class="dropdown-item" href="#">New Building</a>
+                              <a class="dropdown-item" href="#">Main Building</a>
+                              <a class="dropdown-item" href="#">Engineering Faculty</a>
                             </div>
                           </div>
                     </div>
@@ -54,17 +52,17 @@
 
                 <div class="row p-4">
                     <div class="col">
-                        <label for="">Academic Semester</label>
+                        <label for="">Room</label>
                     </div>
                     <div class="col">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Academic Semester
+                              Select Room 
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                              <a class="dropdown-item" href="#">B502</a>
+                              <a class="dropdown-item" href="#">608</a>
+                              <a class="dropdown-item" href="#">308</a>
                             </div>
                           </div>
                     </div>
@@ -72,17 +70,17 @@
 
                 <div class="row p-4">
                     <div class="col">
-                        <label for="">Program</label>
+                        <label for="">Room Type</label>
                     </div>
                     <div class="col">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Program
+                              Select Room Tyoe
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                              <a class="dropdown-item" href="#">Lecture Hall</a>
+                              <a class="dropdown-item" href="#">Lab</a>
+                              <a class="dropdown-item" href="#">Auditorium</a>
                             </div>
                           </div>
                     </div>
@@ -90,63 +88,55 @@
 
                 <div class="row p-4">
                     <div class="col">
-                        <label for="">Group Number</label>
+                        <label for="">Capacity</label>
                     </div>
                     <div class="col">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Group Number
+                              Capacity
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="row p-4">
-                    <div class="col">
-                        <label for="">Sub Group Number</label>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Sub Group Number
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                              <a class="dropdown-item" href="#">50</a>
+                              <a class="dropdown-item" href="#">100</a>
+                              <a class="dropdown-item" href="#">200</a>
                             </div>
                           </div>
                     </div>
                 </div>
 
                 
-                <div class="row d-flex justify-content-evenly m-3" >
-                    <div class="col d-flex justify-content-around">
-                      <a href="add-student-group-popup.html" onclick="window.open(this.href, 'mywin',
-                      'left=20,top=20,width=500,height=500,toolbar=1,resizable=0,model:true'); return false;">
-                        <button data-modal-target="#modal" id="btnadd" class="button button2">Add Group</button>
-                      </a>
+<!--                 
+                <div class="row d-flex justify-content-end">
+                    <div class="col">
+                        <input type="submit" class="" value="Add Group">
                     </div>
-                    <div class="col d-flex justify-content-around">
-                        <button class="button button2">Clear Input</button>
+                     <div class="col">
+                        <input type="submit" class="" value="Add Group">
                     </div>
+                    
+                </div> -->
+
+                <div class="d-flex justify-content-end">
+                <div class="row w-50 btn-align" >
+                    <div class="col">
+                        <a href="manage_session rooms.html"> <button class="button button2">Submit</button></a>
+                    </div>
+                    
                 </div>
+            </div>
             
-          
             </div>
 
-
-      </div>
-
       </div>
 
 
-
+<!-- 
+      <div id="" >
+        <div class="">
+            <h5>Genarate Group IDs</h5>
+        </div>
+         -->
+      </div>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

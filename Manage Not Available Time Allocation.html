@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+  <a href="index.html" id="home">Home</a>
+  <a href="manage_lecturer.html" id="lecturers">Lecturers</a>
+  <a href="#" id="students">Students</a>
+  <a href="manage_subject.html" id="subjects">Subjects</a>
+  <a href="manage_session.html" id="sessions">Sessions</a>
+  <a href="#" id="tags">Tags</a>
+  <a href="Manage Working Days & Hours.html" id="days">Working Days & Hours</a>
+  <a href="Add Location.html" id="locations">Locations</a>
+  <a href="#" id="timetables">Time Tables</a>
+
+</div>
+
+<div class="sessionheader">
+    <h1>Manage Not Available Time Allocation</h1>
+</div>
+
+<button class="tablink" onclick="openPage('Manage')">Session</button>
+<button class="tablink" onclick="openPage('consecutive')" id="defaultOpen">Consecutive Session</button>
+<button class="tablink" onclick="openPage('parallel')">Parallel Session</button>
+<button class="tablink" onclick="openPage('none_overlapping')">None-Overlapping Session</button>
+<a href="Manage Not Available Time Allocation.html"><button class="tablink_first" onclick="openPage('not_availabe')">Not Available Time</button></a>
+
+<table id="lecturer">
+    <tr>
+      <th>ID</th>
+      <th>Lecturer</th>
+      <th>Group ID</th>
+      <th>Sub Group ID </th>
+      <th>Duration</th>
+      <th>Session ID</th>
+    </tr>
+    <tr>
+      <td>050</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+   
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>051</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+    
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>052</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+     
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>053</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+     
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>054</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+      
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>055</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>     
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>056</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+   
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>057</td>
+      <td>ABC</td>
+      <td>DEF</td>
+      <td>123</td>
+      <td>456</td>
+      <td>000</td>
+  
+      <td>
+          <a href="Edit Not Available.html"><button class="button button2">Edit</button></a>
+          <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    </tr>
+  </table>
+
+
+
+  <div class>
+
+    <a href="Not Available Time Allocation.html"><button class="add_button">Add New</button></a>
+     </div>
+
+</body>
+</html>
