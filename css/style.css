@@ -90,6 +90,36 @@
     color: white;
   }
 
+        /*student group table css*/
+
+        #student_group {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 70%;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-bottom: auto;
+          margin-right: auto;
+        }
+        
+        #student_group td, #student_group th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #student_group tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #student_group tr:hover {background-color: #ddd;}
+        
+        #student_group th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+      
+
   /*subject table css*/
 
   #subject {
@@ -118,6 +148,35 @@
     background-color: #4CAF50;
     color: white;
   }
+
+  /*Session Table*/
+  #session {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+  
+  #session td, #session th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #session tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #session tr:hover {background-color: #ddd;}
+  
+  #session th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
 
     /*button css*/
 
@@ -213,6 +272,17 @@
     margin-right: 100px;
   }
 
+  .group {
+    padding:25px;
+    text-align: center;
+    background: Tomato;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   /*tab css*/
   * {box-sizing: border-box}
 
@@ -258,3 +328,43 @@
     margin-left: 100px;
     margin-right: 100px;
   }
+
+  /* Add Lecturer */
+  .btn {
+    width: 20rem !important;
+  }
+
+  .dropdown-menu{
+      width: 20rem !important;
+  }
+
+  .inner-container{
+      max-width: 50%;
+  }
+  
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .btn-align{
+      /* max-width: 100px; */
+    align-items: flex-end  !important;
+  }
+  label{
+     font-weight: 700;
+  }
+  
