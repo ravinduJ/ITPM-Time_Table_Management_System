@@ -34,7 +34,7 @@ text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 } 
 
-/* new table -----------------------------------------------------------------------------------------*/
+/* new table ----------------------*/
 
 @charset "UTF-8";
 [data-sort-by="firstName"] [data-prop-name="firstName"], [data-sort-by="lastName"] [data-prop-name="lastName"], [data-sort-by="birth"] [data-prop-name="birth"] {
