@@ -1,160 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<html>
+  <head>
     
-    <!-- bootStrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/StudentStyle/add-student-style.css">
-</head>
-<body>
-    
-    <div class="lecturerheader">
-        <h1>Add Working Days & Hours</h1>
-    </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="index.html" id="home">Home</a>
-        <a href="manage_lecturer.html" id="lecturers">Lecturers</a>
-        <a href="view-student-groups.html" id="students">Student Groups</a>
-        <a href="#" id="subjects">Subjects</a>
-        <a href="#" id="sessions">Sessions</a>
-        <a href="#" id="tags">Tags</a>
-        <a href="Manage Working Days & Hours.html" id="days">Working Days & Hours</a>
-        <a href="Add Location.html" id="locations">Locations</a>
-        <a href="#" id="timetables">Time Tables</a>
-      
-      </div>
 
-      <div class="container d-flex justify-content-center" >
-        
+  </head>
+  <body>
 
-            <div class="inner-container m-5">
-                <div class="row p-4">
-                    <div class="col">
-                        <label for="">No of Working Days : </label>
-                        <style>
-                          /* Chrome, Safari, Edge, Opera */
-                          input::-webkit-outer-spin-button,
-                          input::-webkit-inner-spin-button {
-                            -webkit-appearance: none;
-                            margin: 1;
-                          }
-                          
-                          /* Firefox */
-                          input[type=number] {
-                            -moz-appearance: textfield;
-                          }
-                          </style>
-                          <body>
-                      
-                          <input type="number" value="5">
-                </div>
-
-                <div class="row p-4">
-                    <div class="col">
-                      <label for="points">Working Days :</label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Monday
-                      </label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Tuesday
-                      </label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Wednesday
-                      </label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Thursday
-                      </label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Friday
-                      </label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Saturday
-                      </label>
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="">Sunday
-                      </label>
-                      
-                      
-
-                </div>
-
-                <div class="row p-4">
-                    <div class="col">
-                        <label for="">Working Time Per Day : </label>
-                        <style>
-                          /* Chrome, Safari, Edge, Opera */
-                          input::-webkit-outer-spin-button,
-                          input::-webkit-inner-spin-button {
-                            -webkit-appearance: none;
-                            margin: 1;
-                          }
-                          
-                          /* Firefox */
-                          input[type=number] {
-                            -moz-appearance: textfield;
-                          }
-                          </style>
-                          <body>
-                      
-                          <input type="number" value="5"> Hours
-                          <input type="number" value="5"> Minutes
-                                     
-                </div>
-
-                <div class="row p-4">
-                    <div class="col">
-                      <label for="points">Time Slots :</label>
-                        <label class="checkbox-inline">
-                          <input type="checkbox" value="">30 Minutes
-                        </label>
-                        <label class="checkbox-inline">
-                          <input type="checkbox" value="">Hour
-                        </label>
-
-                        
-                    </div>
-                  
-                </div>
-
-               
-<!--                 
-                <div class="row d-flex justify-content-end">
-                    <div class="col">
-                        <input type="submit" class="" value="Add Group">
-                    </div>
-                     <div class="col">
-                        <input type="submit" class="" value="Add Group">
-                    </div>
-                    
-                </div> -->
-
-                <div class="d-flex justify-content-end">
-                <div class="row w-50 btn-align" >
-                    <div class="col">
-                        <a href="Manage Working Days & Hours.html"> <button class="button button2">Submit</button></a>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            </div>
-
-      </div>
-
-
-<!-- 
-      <div id="" >
-        <div class="">
-            <h5>Genarate Group IDs</h5>
+    <header class="header" role="banner">
+        <h1 class="logo">
+          <a href="#">Timetable <span>Manager</span></a>
+        </h1>
+        <div class="nav-wrap">
+          <nav class="main-nav" role="navigation">
+            <ul class="unstyled list-hover-slide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="manage_lecturer.html">Lecturers</a></li>
+              <li><a href="view-student-groups.html">Student Groups</a></li>
+              <li><a href="manage_subject.html">Subjects</a></li>
+              <li><a href="manage_session.html">Sessions</a></li>
+              <li><a href="#">Tags</a></li>
+              <li><a href="Manage Working Days & Hours.html">Days & Hours</a></li>
+              <li><a href="Manage Location.html">Locations</a></li>
+              <li><a href="#">Time Tables</a></li>
+            </ul>
+          </nav>
         </div>
-         -->
+      </header>
+
+      
+<!-- Form-->
+<div class="form">
+  <div class="form-toggle"></div>
+  <div class="form-panel one">
+    <div class="form-header">
+      <h1>Add Working Days & Hours</h1>
+    </div>
+    <div class="form-content">
+      <form>
+        <div class="form-group">
+          <label for="duration"><b>No of Working Days : </b></label>
+         <input type="number" id="duration" name="duration"/>
+        </div>
+        <br></br>
+        <div class="form-group">
+            <label for="lecturer"><b>Working Days :</b></label>
+            
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">MON</label>
+              
+						</div>
+            
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">TUE</label>
+              
+						</div>
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">WED</label>
+              
+						</div>
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">THU</label>
+              
+						</div>
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">FRI</label>
+              
+						</div>
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">SAT</label>
+              
+						</div>
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">SUN</label>
+              
+						</div>
+          </div>
+          <br></br>
+          <div class="form-group">
+            <label for="lecturer"><b>Working Days :</b></label>
+            <input type="number" id="duration" name="duration"/>
+              <label for="duration">Hours </label>
+              <input type="number" id="duration" name="duration" />
+              <label for="duration">Minutes </label>
+            </div>
+          </div>
+          <br></br>
+          <div class="form-group">
+            <label for="lecturer"><b>Time Slots :</b></label>
+
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">30 Minutes</label>
+              
+						</div>
+            
+            <div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">Hour</label>
+              
+						</div>
+          
+       
+          </div>
+          <br></br>
+          
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      
+        <div class="form-group">
+         <button type="back">Back</button>
+        </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+      
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+  </body>
 </html>
