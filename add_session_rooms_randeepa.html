@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header class="header" role="banner">
+        <h1 class="logo">
+          <a href="#">Timetable <span>Manager</span></a>
+        </h1>
+        <div class="nav-wrap">
+          <nav class="main-nav" role="navigation">
+            <ul class="unstyled list-hover-slide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="manage_lecturer.html">Lecturers</a></li>
+              <li><a href="view-student-groups.html">Student Groups</a></li>
+              <li><a href="manage_subject.html">Subjects</a></li>
+              <li><a href="manage_session.html">Sessions</a></li>
+              <li><a href="#">Tags</a></li>
+              <li><a href="Manage Working Days & Hours.html">Days & Hours</a></li>
+              <li><a href="Manage Location.html">Locations</a></li>
+              <li><a href="#">Time Tables</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      
+<!-- Form-->
+<div class="form">
+  <div class="form-toggle"></div>
+  <div class="form-panel one">
+    <div class="form-header">
+      <h1>Add Session Rooms</h1>
+    </div>
+   
+        <div class="form-group">
+          <label for="faculty">Session</label>
+          <select name="faculty" id="faculty" required="required">
+            <option value="it">Select Session</option>
+            <option value="bm">Session 1</option>
+            <option value="eng">Session 2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="department">Room</label>
+          <select name="department" id="department" required="required">
+            <option value="se">Select Room</option>
+            <option value="ise">501A</option>
+            <option value="csne">401</option>
+            <option value="cs">305</option>
+          </select>
+        </div>
+       
+        <div class="form-group">
+          <label for="rank">Selected Session</label>
+          <input type="text" id="rank" name="rank" required="required"/>
+
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="form-group">
+          <button type="clear">Clear</button>
+        </div>
+      </div>
+      
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
