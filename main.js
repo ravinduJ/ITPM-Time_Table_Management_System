@@ -14,7 +14,7 @@ function createWindow () {
     }
   })
 
-  win.loadFile('index.html')
+  win.loadFile('add_session_rooms_randeepa.html')
   
 }
 
