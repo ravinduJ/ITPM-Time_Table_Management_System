@@ -34,98 +34,74 @@ text-decoration: none;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 } 
 
-/* new table ----------------------*/
-
-@charset "UTF-8";
-[data-sort-by="firstName"] [data-prop-name="firstName"], [data-sort-by="lastName"] [data-prop-name="lastName"], [data-sort-by="birth"] [data-prop-name="birth"] {
-  background: rgba(0, 0, 128, 0.15);
-  text-shadow: 0 1px #eee;
+.table-body{
+  background-color: rgba(236, 236, 236, 0.849);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-[data-sort-by="firstName"] [data-prop-name="firstName"]:before, [data-sort-by="lastName"] [data-prop-name="lastName"]:before, [data-sort-by="birth"] [data-prop-name="birth"]:before {
-  box-shadow: 0 0 0.5em navy;
-}
-[data-sort-by="firstName"] .prop__name[data-prop-name="firstName"], [data-sort-by="lastName"] .prop__name[data-prop-name="lastName"], [data-sort-by="birth"] .prop__name[data-prop-name="birth"] {
-  color: lightcyan;
-}
-[data-sort-by="firstName"] .prop__name[data-dir="1"][data-prop-name="firstName"]:after, [data-sort-by="lastName"] .prop__name[data-dir="1"][data-prop-name="lastName"]:after, [data-sort-by="birth"] .prop__name[data-dir="1"][data-prop-name="birth"]:after {
-  content: "▲";
-}
-[data-sort-by="firstName"] .prop__name[data-dir="-1"][data-prop-name="firstName"]:after, [data-sort-by="lastName"] .prop__name[data-dir="-1"][data-prop-name="lastName"]:after, [data-sort-by="birth"] .prop__name[data-dir="-1"][data-prop-name="birth"]:after {
-  content: "▼";
+ td{
+  color: black;
 }
 
-* {
-  box-sizing: inherit;
+.table{
+  border-radius: 5px;
 }
 
-body {
-  background: #555;
-  font: 1em/1.25 trebuchet ms, verdana, sans-serif;
-  color: #fff;
+.container-fluid{
+  margin-left: 12rem !important;
+}
+.edit-btn{
+  background-color: #4CAF50;
+  color: #ffff;
+  border-style: none;
+  padding: 10px,15px,10px;
+  /* border-radius: 20px; */
+
+}
+.edit-btn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  padding: 15px ,10px;
+  border-radius: 10px;
+  transition: 250ms;
+  margin: 1px;
 }
 
-table {
-  box-sizing: border-box;
-  overflow: hidden;
-  margin: 4em auto;
-  border-collapse: collapse;
-  min-width: 23em;
-  width: 70%;
-  max-width: 56em;
-  border-radius: 0.5em;
-  box-shadow: 0 0 0.5em #000;
+.remove-btn{
+  background-color: #ec0f0f;
+  color: #ffff;
+  border-style: none;
+  padding: 10px,15px,10px;
 }
 
-thead {
-  background: linear-gradient(#606062, #28262b);
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  cursor: pointer;
+.remove-btn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  padding: 15px ,10px;
+  border-radius: 10px;
+  transition: 250ms;
+  
 }
 
-th {
-  text-align: left;
+.page-heading{
+
+  
+ margin-left: 8rem;
+ margin-bottom: 25px;
+ padding: 20px;
 }
 
-tbody {
-  display: flex;
-  flex-direction: column;
-  color: #000;
-}
+.display-6{
+  text-shadow: 0 1px 0 #ccc,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0, .1),
+                0 0px 5px rgba(0,0,0, .1),
+                0 1px 3px rgba(0,0,0, .3),
+                0 3px 5px rgba(0,0,0, .2),
+                0 5px 10px rgba(0,0,0, .25),
+                0 10px 10px rgba(0,0,0, .2),
+                0 20px 20px rgba(0,0,0, .15) !important;
 
-tr {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-}
-
-.odd {
-  background: linear-gradient(#eeeeee 1px, #dddddd 1px, #cccccc calc(100% - 1px), #999999 calc(100% - 1px));
-}
-
-.even {
-  background: linear-gradient(#eeeeee 1px, #bbbbbb 1px, #aaaaaa calc(100% - 1px), #999999 calc(100% - 1px));
-}
-
-[class*="prop__"] {
-  float: left;
-  position: relative;
-  padding: 0.5em 1em;
-  width: 40%;
-}
-[class*="prop__"]:last-child {
-  width: 20%;
-}
-[class*="prop__"]:before {
-  position: absolute;
-  top: -0.5em;
-  right: 0;
-  bottom: -5em;
-  left: 0;
-  content: "";
-}
-[class*="prop__"]:after {
-  position: absolute;
-  right: 0.5em;
+                color: rgb(240, 239, 239) !important;
+                
 }
