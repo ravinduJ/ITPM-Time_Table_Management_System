@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <!-- bootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/StudentStyle/add-student-style.css">
+    <script  defer src="Javascript/add-student-group.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col">
+            <header class="header" role="banner">
+              <h1 class="logo">
+                <a href="#">Timetable <span>Manager</span></a>
+              </h1>
+              <div class="nav-wrap">
+                <nav class="main-nav" role="navigation">
+                  <ul class="unstyled list-hover-slide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="manage_lecturer.html">Lecturers</a></li>
+                    <li><a href="view-student-groups.html">Student Groups</a></li>
+                    <li><a href="manage_subject.html">Subjects</a></li>
+                    <li><a href="manage_session.html">Sessions</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="Manage Working Days & Hours.html">Days & Hours</a></li>
+                    <li><a href="Manage Location.html">Locations</a></li>
+                    <li><a href="#">Time Tables</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+          
+    
+    
+          </div>
+    
+          <div class="col-10 ">
+    
+            
+    
+            <div class="page-heading ">
+              <h1 class="display-5">Manage Student Groups </h1>
+            </div>
+           
+    
+            <div class="container-fluid">
+
+    <div class="group">
+        <h3>Add Student Groups</h3>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="home">Home</a>
+        <a href="manage_lecturer.html" id="lecturers">Lecturers</a>
+        <a href="view-student-groups.html" id="students">Student Groups</a>
+        <a href="#" id="subjects">Subjects</a>
+        <a href="#" id="sessions">Sessions</a>
+        <a href="#" id="tags">Tags</a>
+        <a href="Manage Working Days & Hours.html" id="days">Working Days & Hours</a>
+        <a href="Add Location.html" id="locations">Locations</a>
+        <a href="#" id="timetables">Time Tables</a>
+      
+      </div>
+
+      <div class="container d-flex justify-content-center" >
+        
+
+            <div class="inner-container m-5">
+                <div class="row p-4">
+                    <div class="col">
+                        <label for="">Academic Year</label>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Academic Year
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row p-4">
+                    <div class="col">
+                        <label for="">Academic Semester</label>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Academic Semester
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row p-4">
+                    <div class="col">
+                        <label for="">Program</label>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Program
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row p-4">
+                    <div class="col">
+                        <label for="">Group Number</label>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Group Number
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row p-4">
+                    <div class="col">
+                        <label for="">Sub Group Number</label>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Sub Group Number
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+
+              <div class="form">
+                <div class="form-toggle"></div>
+                <div class="form-panel one">
+                  <div class="form-header">
+                    <h1> Student Group Details</h1>
+                  </div>
+                  <div class="form-content">
+                    <form>
+                      <div class="form-group">
+                        <label for="acadamic-Year">Acadamic Year</label>
+                        <select name="A-Year" id="acadamic-Year" required="required">
+                          <option value=""> Select Acadamic Year </option>
+                          <option value="y1">Y1</option>
+                          <option value="y2">Y2</option>
+                          <option value="y3">Y3</option>
+                          <option value="y4">Y4</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="acadamic-Semester">Acadamic Semester</label>
+                        <select name="A-semester" id="acadamic-Semester" required="required">
+                          <option value=""> Select Acadamic Semester </option>
+                          <option value="S1">S1</option>
+                          <option value="S2">S2</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="program">Program</label>
+                        <select name="Program" id="program" required="required">
+                          <option value=""> Select Program </option>
+                          <option value="IT">BSc (Hons) in Information Technology
+                            Specialising in Information Technology</option>
+                          <option value="SE">BSc (Hons) in Information Technology
+                            Specialising in Computer Systems & Network Engineering</option>
+                          <option value="IM">BSc (Hons) in Information Technology
+                            Specialising in Interactive Media</option>
+                          <option value="DS">BSc (Hons) in Information Technology
+                            Specialising in Data Science</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="groupNo">Group Number</label>
+                        <select name="GroupNo" id="groupNo" required="required">
+                          <option value=""> Select Group Number </option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="SubGroup">Sub Group Number</label>
+                        <select name="Subgroup" id="SubGroup" required="required">
+                          <option value=""> Select Sub Group Number </option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      
+              
+                      <div class="form-group">
+                        
+                        <button type="submit"><a href="add-student-group-popup.html" onclick="window.open(this.href, 'mywin',
+                          'left=20,top=20,width=500,height=500,toolbar=1,resizable=0,model:true'); return false;">Add </a></button>
+                      
+                      </div>
+                    
+                      <div class="form-group">
+                        <button type="clear">Clear</button>
+                      </div>
+                    </div>
+                    
+                      
+                    </form>
+                  </div>
+                </div>
+            </div>
+    
+    
+            
+    
+    
+    
+    
+    
+            
+    
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
