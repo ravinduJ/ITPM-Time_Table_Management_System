@@ -6,7 +6,34 @@
    /* background-color: blueviolet; */
    margin: 10%;
 
+
+
 }
+
+
+.add-btn-container1{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  height: 200px;
+  /* background-color: blueviolet; */
+  margin: 10%;
+
+}
+
+.add-btn-container2{
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  margin-top: 10px;
+  height: 200px;
+  /* background-color: blueviolet; */
+  margin: 10%;
+
+
+  
+}
+
 a:link{
 color: #ffff;
 background-color: transparent;
