@@ -50,44 +50,44 @@
       
       
         <br></br>
-        <div class="form-group">
-          <label for="lecturer"><b>Select Room:</b></label>
-          <select name="lecturer" id="lecturer">
-            <!-- <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option> -->
-          </select>
-        </div>
-        <br></br>
-        <div class="form-group">
-          <label for="lecturer"><b>Select Day</b></label>
-          <select name="lecturer" id="lecturer">
-            <!-- <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option> -->
-          </select>
-        </div>
-          <br></br>
+        <div class="form-content">
+          <form>
+            <div class="form-group">
+                <label for="offered_year"><b>Select Room :</b></label>
+                <select name="offered_year" id="offered_year" required="required">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="offered_semester"><b>Select Day : </b></label>
+                <select name="offered_semester" id="offered_semester" required="required">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+          
           <div class="form-group">
-            <label for="lecturer"><b>Working Days :</b></label>
+            <label for="lecturer"><b>Start Time :</b></label>
             <input type="number" id="duration" name="duration"/>
               <label for="duration">Hours </label>
               <input type="number" id="duration" name="duration" />
               <label for="duration">Minutes </label>
             </div>
           </div>
-          <br></br>
+          
           <div class="form-group">
-            <label for="lecturer"><b>Working Days :</b></label>
+            <label for="lecturer"><b>End Time :</b></label>
             <input type="number" id="duration" name="duration"/>
               <label for="duration">Hours </label>
               <input type="number" id="duration" name="duration" />
               <label for="duration">Minutes </label>
             </div>
           </div>
-          <br></br>
+          
           
         <div class="form-group">
           <button type="submit">Submit</button>
