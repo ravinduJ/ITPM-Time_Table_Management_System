@@ -1,2 +1,2 @@
-# Time Table Management System by using Electron Mongodb Technical Spec 
+# Time Table Management System by using Electron Mongodb 
  
