@@ -39,13 +39,17 @@ function editSession(id) {
 }
 
 function renderSessions(sessions) {
-  sessionList.innerHTML = `<table class="table table-striped">
+  sessionList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">Lecturer</th>
+          <th style="width:170px; display:inline-block; overflow:hidden">Lecturer</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Subject</th>
-          <th style="width:150px; display:inline-block; overflow:hidden">SubjectCode</th>
-          <th style="width:100px; display:inline-block; overflow:hidden">S-Count</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">Subject Code</th>
+          <th style="width:100px; display:inline-block; overflow:hidden">Tag</th>
+          <th style="width:100px; display:inline-block; overflow:hidden">Group ID</th>
+          <th style="width:100px; display:inline-block; overflow:hidden">Sub Group ID</th>
+          <th style="width:100px; display:inline-block; overflow:hidden">Student Count</th>
+          <th style="width:100px; display:inline-block; overflow:hidden">Duration</th>
 
           </tr>
         </thead>
@@ -55,19 +59,23 @@ function renderSessions(sessions) {
   console.log(sessions);
   sessions.map((t) => {
     sessionList.innerHTML +=`
-    <table class="table table-striped">
+    <table class="table table-dark">
           <tbody>
             <tr>
-              <td style="width:100px; display:inline-block; overflow:hidden">${t.lecturer}</td>
+              <td style="width:170px; display:inline-block; overflow:hidden">${t.lecturer}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.subject}</td>
               <td style="width:150px; display:inline-block; overflow:hidden">${t.subject_code}</td>
+              <td style="width:100px; display:inline-block; overflow:hidden">${t.tag}</td>
+              <td style="width:100px; display:inline-block; overflow:hidden">${t.group_id}</td>
+              <td style="width:100px; display:inline-block; overflow:hidden">${t.sub_group_id}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.student_count}</td>
+              <td style="width:100px; display:inline-block; overflow:hidden">${t.duration_hour}:${t.duration_minute}</td>
               <td style="width:250px; display:inline-block; overflow:hidden">
-              <button class="btn btn-btn btn-outline-success" onclick="editSession('${t._id}')">
-             Edit
+              <button class="btn btn-primary btn-sm" onclick="editSession('${t._id}')">
+              ✎ Edit
           </button>
-              <button class="btn btn-btn btn-outline-danger" onclick="deleteSession('${t._id}')">
-              Delete
+              <button class="btn btn-danger btn-sm" onclick="deleteSession('${t._id}')">
+              🗑 Delete
             </button>
           </td>
             </tr>
