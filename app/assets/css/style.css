@@ -2477,3 +2477,27 @@ header .form-inline {
 .cbtn{
   margin-left: 10%;
 }
+
+.new{
+  width: 102% !important; 
+  background-color: #09072d;
+  color: #bebcdd; 
+
+}
+
+.newbtn {
+  background-color: #bebcdd;
+  color:#09072d !important ;
+}
+
+.btncol{
+  color:#09072d !important ;
+}
+
+.chart{
+  width:101% !important ;
+}
+
+.loc{
+  width:100.5% !important;
+}
