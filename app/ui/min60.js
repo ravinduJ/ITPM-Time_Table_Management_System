@@ -25,7 +25,7 @@ function editMin60(id) {
 }
 
 function renderMin60s(min60s) {
-  min60List.innerHTML = `<table class="table table-striped">
+  min60List.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:100px; display:inline-block; overflow:hidden">Start</th>
@@ -37,18 +37,18 @@ function renderMin60s(min60s) {
   console.log(min60s);
   min60s.map((t) => {
     min60List.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.startingHour}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.endingHour}</td>
         <td style="width:250px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editMin60('${t._id}')">
-       Edit
-    </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteMin60('${t._id}')">
-        Delete
-      </button>
+        <td><button class="btn btn-secondary btn-sm" onclick="editWorkingH('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingH('${t._id}')">
+          🗑 Delete
+        </button></td>
     </td>
       </tr>
 </table>

@@ -27,7 +27,7 @@ function editNotavgro(id) {
 }
 
 function renderNotavgros(notavgros) {
-  notavgroList.innerHTML = `<table class="table table-striped">
+  notavgroList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:100px; display:inline-block; overflow:hidden">Group</th>
@@ -41,19 +41,19 @@ function renderNotavgros(notavgros) {
   console.log(notavgros);
   notavgros.map((t) => {
     notavgroList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
           <tbody>
             <tr>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.group}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.starting_time_hour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.ending_time_hour}</td>
               <td style="width:200px; display:inline-block; overflow:hidden">
-              <button class="btn btn-btn btn-outline-success" onclick="editNotavgro('${t._id}')">
-             Edit
-          </button>
-              <button class="btn btn-btn btn-outline-danger" onclick="deleteNotavgro('${t._id}')">
-              Delete
-            </button>
+              <td><button class="btn btn-secondary btn-sm" onclick="editWorkingH('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingH('${t._id}')">
+          🗑 Delete
+        </button></td>
           </td>
             </tr>
     </table>

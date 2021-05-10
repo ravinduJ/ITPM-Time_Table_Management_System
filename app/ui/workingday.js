@@ -33,7 +33,7 @@ function editWorkingday(id) {
 }
 
 function renderWorkingdays(workingdays) {
-  workingdayList.innerHTML = `<table class="table table-striped">
+  workingdayList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:100px; display:inline-block; overflow:hidden">Working Days</th>
@@ -44,19 +44,18 @@ function renderWorkingdays(workingdays) {
   console.log(workingdays);
   workingdays.map((t) => {
     workingdayList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.day}</td>
 
-        <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editWorkingday('${t._id}')">
-       Edit
-      </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteWorkingday('${t._id}')">
-        Delete
-      </button>
-    </td>
+        <td><button class="btn btn-secondary" onclick="editWorkingH('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger" onclick="deleteWorkingH('${t._id}')">
+          🗑 Delete
+        </button></td>
+         
       </tr>   
 </table>
         `;

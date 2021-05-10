@@ -2477,3 +2477,7 @@ header .form-inline {
 .cbtn{
   margin-left: 10%;
 }
+
+.col1{
+  width:100.5% !important;
+}

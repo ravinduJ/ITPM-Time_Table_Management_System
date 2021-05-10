@@ -28,10 +28,10 @@ function editNotavlec(id) {
 }
 
 function renderNotavlecs(notavlecs) {
-  notavlecList.innerHTML = `<table class="table table-striped">
+  notavlecList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">Lecturer</th>
+          <th style="width:500px; display:inline-block; overflow:hidden">Lecturer</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Start</th>
           <th style="width:100px; display:inline-block; overflow:hidden">End</th>
 
@@ -42,19 +42,19 @@ function renderNotavlecs(notavlecs) {
   console.log(notavlecs);
   notavlecs.map((t) => {
     notavlecList.innerHTML +=`
-    <table class="table table-striped">
+    <table class="table table-dark">
           <tbody>
             <tr>
-              <td style="width:100px; display:inline-block; overflow:hidden">${t.lecturer}</td>
+              <td style="width:500px; display:inline-block; overflow:hidden">${t.lecturer}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.starting_time_hour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.ending_time_hour}</td>
               <td style="width:250px; display:inline-block; overflow:hidden">
-              <button class="btn btn-btn btn-outline-success" onclick="editNotavlec('${t._id}')">
-             Edit
-          </button>
-              <button class="btn btn-btn btn-outline-danger" onclick="deleteNotavlec('${t._id}')">
-              Delete
-            </button>
+              <td><button class="btn btn-secondary btn-sm" onclick="editWorkingH('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingH('${t._id}')">
+          🗑 Delete
+        </button></td>
           </td>
             </tr>
     </table>
