@@ -31,7 +31,7 @@ function renderNotavsess(notavsess) {
   notavsesList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:500px; display:inline-block; overflow:hidden">Session ID</th>
+          <th style="width:500px; display:inline-block; overflow:hidden">Session</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Start</th>
           <th style="width:100px; display:inline-block; overflow:hidden">End</th>
           </tr>
@@ -48,12 +48,12 @@ function renderNotavsess(notavsess) {
               <td style="width:100px; display:inline-block; overflow:hidden">${t.starting_time_hour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.ending_time_hour}</td>
               <td style="width:250px; display:inline-block; overflow:hidden">
-              <td><button class="btn btn-secondary btn-sm" onclick="editWorkingH('${t._id}')">
-              ✎ Edit
-            </button></td>
-              <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingH('${t._id}')">
-                🗑 Delete
-              </button></td>
+              <td><button class="btn btn-secondary btn-sm" onclick="editNotavses('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteNotavses('${t._id}')">
+          🗑 Delete
+        </button></td>
           </td>
             </tr>
     </table>

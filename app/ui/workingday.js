@@ -47,15 +47,14 @@ function renderWorkingdays(workingdays) {
     <table class="table table-dark">
     <tbody>
       <tr>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.day}</td>
-
-        <td><button class="btn btn-secondary" onclick="editWorkingH('${t._id}')">
+        <td style="width:200px; display:inline-block; overflow:hidden">${t.day}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden">
+        <td><button class="btn btn-secondary btn-sm" onclick="editWorkingday('${t._id}')">
         ✎ Edit
       </button></td>
-        <td><button class="btn btn-danger" onclick="deleteWorkingH('${t._id}')">
+        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingday('${t._id}')">
           🗑 Delete
         </button></td>
-         
       </tr>   
 </table>
         `;

@@ -42,10 +42,10 @@ function renderWorkingtimes(workingtimes) {
       <tr>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.hour}:${t.minute}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
-        <td><button class="btn btn-secondary btn-sm" onclick="editWorkingH('${t._id}')">
+        <td><button class="btn btn-secondary btn-sm" onclick="editWorkingtime('${t._id}')">
         ✎ Edit
       </button></td>
-        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingH('${t._id}')">
+        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingtime('${t._id}')">
           🗑 Delete
         </button></td>
     </td>
