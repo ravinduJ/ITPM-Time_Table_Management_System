@@ -28,10 +28,10 @@ function editNotavses(id) {
 }
 
 function renderNotavsess(notavsess) {
-  notavsesList.innerHTML = `<table class="table table-striped">
+  notavsesList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:200px; display:inline-block; overflow:hidden">Session</th>
+          <th style="width:500px; display:inline-block; overflow:hidden">Session</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Start</th>
           <th style="width:100px; display:inline-block; overflow:hidden">End</th>
           </tr>
@@ -41,19 +41,19 @@ function renderNotavsess(notavsess) {
   console.log(notavsess);
   notavsess.map((t) => {
     notavsesList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
           <tbody>
             <tr>
-              <td style="width:200px; display:inline-block; overflow:hidden">${t.session}</td>
+              <td style="width:500px; display:inline-block; overflow:hidden">${t.session}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.starting_time_hour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.ending_time_hour}</td>
               <td style="width:250px; display:inline-block; overflow:hidden">
-              <button class="btn btn-btn btn-outline-success" onclick="editNotavses('${t._id}')">
-             Edit
-          </button>
-              <button class="btn btn-btn btn-outline-danger" onclick="deleteNotavses('${t._id}')">
-              Delete
-            </button>
+              <td><button class="btn btn-secondary btn-sm" onclick="editNotavses('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteNotavses('${t._id}')">
+          🗑 Delete
+        </button></td>
           </td>
             </tr>
     </table>
