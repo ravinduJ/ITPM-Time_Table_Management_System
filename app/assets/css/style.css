@@ -2478,6 +2478,28 @@ header .form-inline {
   margin-left: 10%;
 }
 
+.new{
+  width: 102% !important; 
+  background-color: #09072d;
+  color: #bebcdd; 
+
+}
+
+.newbtn {
+  background-color: #bebcdd;
+  color:#09072d !important ;
+}
+
+.btncol{
+  color:#09072d !important ;
+}
+
+.chart{
+  width:101% !important ;
+}
+
+.loc{
+
 .col1{
   width:100.5% !important;
 }

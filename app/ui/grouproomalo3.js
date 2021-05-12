@@ -25,10 +25,10 @@ function editGrouproomalo3(id) {
 }
 
 function renderGrouproomalo3s(grouproomalo3s) {
-  grouproomalo3List3.innerHTML = `<table class="table table-striped">
+  grouproomalo3List3.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">Session</th>
+          <th style="width:400px; display:inline-block; overflow:hidden">Session</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Room</th>
           </tr>
         </thead>
@@ -37,17 +37,17 @@ function renderGrouproomalo3s(grouproomalo3s) {
   console.log(grouproomalo3s);
   grouproomalo3s.map((t) => {
     grouproomalo3List3.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.group3}</td>
+        <td style="width:400px; display:inline-block; overflow:hidden">${t.group3}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.room3}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editGrouproomalo3('${t._id}')">
-       Edit
+        <button class="btn btn-primary btn-sm" onclick="editGrouproomalo3('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteGrouproomalo3('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteGrouproomalo3('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>   

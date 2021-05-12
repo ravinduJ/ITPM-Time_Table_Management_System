@@ -27,12 +27,12 @@ function editTask(id) {
 }
 
 function renderTasks(tasks) {
-  taskList.innerHTML = `<table class="table table-striped">
+  taskList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">Name</th>
+          <th style="width:200px; display:inline-block; overflow:hidden">Name</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Block</th>
-          <th style="width:160px; display:inline-block; overflow:hidden">Note</th>
+          <th style="width:400px; display:inline-block; overflow:hidden">Note</th>
           <th style="width:200px; display:inline-block; overflow:hidden"></th>
           </tr>
         </thead>
@@ -41,18 +41,18 @@ function renderTasks(tasks) {
   console.log(tasks);
   tasks.map((t) => {
     taskList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.name}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden">${t.name}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.description}</td>
-        <td style="width:160px; display:inline-block; overflow:hidden">${t.note}</td>
+        <td style="width:400px; display:inline-block; overflow:hidden">${t.note}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editTask('${t._id}')">
-       Edit
+        <button class="btn btn-primary btn-sm" onclick="editTask('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteTask('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteTask('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>
