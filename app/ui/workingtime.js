@@ -25,7 +25,7 @@ function editWorkingtime(id) {
 }
 
 function renderWorkingtimes(workingtimes) {
-  workingtimeList.innerHTML = `<table class="table table-striped">
+  workingtimeList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:100px; display:inline-block; overflow:hidden">Hours</th>
@@ -37,17 +37,17 @@ function renderWorkingtimes(workingtimes) {
   console.log(workingtimes);
   workingtimes.map((t) => {
     workingtimeList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.hour}:${t.minute}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editWorkingtime('${t._id}')">
-       Edit
-      </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteWorkingtime('${t._id}')">
-        Delete
-      </button>
+        <td><button class="btn btn-secondary btn-sm" onclick="editWorkingtime('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingtime('${t._id}')">
+          🗑 Delete
+        </button></td>
     </td>
       </tr>
 </table>

@@ -25,7 +25,7 @@ function editMin30(id) {
 }
 
 function renderMin30s(min30s) {
-  min30List.innerHTML = `<table class="table table-striped">
+  min30List.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:100px; display:inline-block; overflow:hidden">Start</th>
@@ -37,18 +37,18 @@ function renderMin30s(min30s) {
   console.log(min30s);
   min30s.map((t) => {
     min30List.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
           <tbody>
             <tr>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.startingHour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.endingHour}</td>
               <td style="width:250px; display:inline-block; overflow:hidden">
-              <button class="btn btn-btn btn-outline-success" onclick="editMin30('${t._id}')">
-             Edit
-          </button>
-              <button class="btn btn-btn btn-outline-danger" onclick="deleteMin30('${t._id}')">
-              Delete
-            </button>
+              <td><button class="btn btn-secondary btn-sm" onclick="editMin30('${t._id}')">
+        ✎ Edit
+      </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteMin30('${t._id}')">
+          🗑 Delete
+        </button></td>
           </td>
             </tr>
     </table>
