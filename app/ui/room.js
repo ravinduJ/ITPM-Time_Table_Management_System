@@ -32,10 +32,10 @@ function renderRooms(rooms) {
   roomList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:150px; display:inline-block; overflow:hidden">B-Name</th>
-          <th style="width:60px; display:inline-block; overflow:hidden">Room</th>
-          <th style="width:100px; display:inline-block; overflow:hidden">Capacity</th>
-          <th style="width:220px; display:inline-block; overflow:hidden">Type</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">Building Name</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">Room Name</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">Room Capacity</th>
+          <th style="width:220px; display:inline-block; overflow:hidden">Room Type</th>
           <th style="width:100px; display:inline-block; overflow:hidden"></th>
 
           </tr>
@@ -49,8 +49,8 @@ function renderRooms(rooms) {
     <tbody>
       <tr>
         <td style="width:150px; display:inline-block; overflow:hidden">${t.buildingName}</td>
-        <td style="width:60px; display:inline-block; overflow:hidden">${t.roomName}</td>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.categoty}</td>
+        <td style="width:150px; display:inline-block; overflow:hidden">${t.roomName}</td>
+        <td style="width:150px; display:inline-block; overflow:hidden">${t.categoty}</td>
         <td style="width:150px; display:inline-block; overflow:hidden">${t.type}</td>
         <td style="width:250px; display:inline-block; overflow:hidden">
         <button class="btn btn-primary btn-sm" onclick="editRoom('${t._id}')">

@@ -40,11 +40,12 @@ function renderWorkingHs(workingHs) {
         <tr>
           <td>${t.hours}</td>
           <td>${t.minitues}</td>
-          <td><button class="btn btn-danger" onclick="deleteWorkingH('${t._id}')">
-          🗑 Delete
-        </button></td>
-          <td><button class="btn btn-secondary" onclick="editWorkingH('${t._id}')">
+          <td><button class="btn btn-primary btn-sm" onclick="editWorkingH('${t._id}')">
           ✎ Edit
+        </button></td>
+          
+          <td><button class="btn btn-danger btn-sm" onclick="deleteWorkingH('${t._id}')">
+          🗑 Delete
         </button></td>
         </tr>
       </tbody>

@@ -32,10 +32,10 @@ function renderStudents(students) {
   studentList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:50px; display:inline-block; overflow:hidden;">Year</th>
+          <th style="width:200px; display:inline-block; overflow:hidden;">Accademic Year</th>
           <th style="width:200px; display:inline-block; overflow:hidden;">Programme</th>
-          <th style="width:100px; display:inline-block; overflow:hidden;">Count</th>
-          <th style="width:100px; display:inline-block; overflow:hidden;">S-Count</th>
+          <th style="width:200px; display:inline-block; overflow:hidden;">Group Count</th>
+          <th style="width:200px; display:inline-block; overflow:hidden;">Sub Group Count</th>
         
           </tr>
         </thead>
@@ -47,10 +47,10 @@ function renderStudents(students) {
     <table class="table table-dark  w-auto">
     <tbody>
       <tr >
-        <td style="width:50px; display:inline-block; overflow:hidden;">${t.year}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden;">${t.year}</td>
         <td style="width:200px; display:inline-block; overflow:hidden;">${t.programme}</td>
-        <td style="width:100px; display:inline-block; overflow:hidden;">${t.group_count}</td>
-        <td style="width:100px; display:inline-block; overflow:hidden;">${t.sub_group_count}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden;">${t.group_count}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden;">${t.sub_group_count}</td>
         <td style="width:250px; display:inline-block; overflow:hidden;">
         <button class="btn btn-primary btn-sm" onclick="editStudent('${t._id}')">
         ✎ Edit

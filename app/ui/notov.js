@@ -54,11 +54,11 @@ function renderNotovs(notovs) {
         <div class="row">${t.session_4}</div>
         <div class="row">${t.session_5}</div>
           </td>
-          <td><button class="btn btn-danger" onclick="deleteNotov('${t._id}')">
-          🗑 Delete
-        </button></td>
-          <td><button class="btn btn-secondary" onclick="editNotov('${t._id}')">
+          <td><button class="btn btn-primary btn-sm" onclick="editNotov('${t._id}')">
           ✎ Edit
+        </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteNotov('${t._id}')">
+        🗑 Delete
         </button></td>
         </tr>
       </tbody>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sessions that should not overlap</title>
+    <title>Time Table Manager</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -73,11 +73,11 @@
                     <a href="createSessions.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> Sessions</a>
                 </li>
                 <li class="main-menu">
-                    <a href="notAvLec.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> Invalid Time</a>
+                    <a href="notAvLec.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> Not Available Time</a>
                 </li>
                 
                 <li class="main-menu">
-                    <a href="subjectDetails.html" class="dropdown-toggle" data-toggle="" aria-haspopup="true" aria-expanded="false"> Modules</a>
+                    <a href="subjectDetails.html" class="dropdown-toggle" data-toggle="" aria-haspopup="true" aria-expanded="false"> Subject</a>
                 </li>
                 <li class="main-menu">
                     <a href="generateStatistics.html" class="dropdown-toggle" data-toggle="" aria-haspopup="true" aria-expanded="false"> Charts</a>
@@ -123,34 +123,43 @@
     </header><!-- /header -->
     <!-- Header-->
 
+    <div class="breadcrumbs">
+        <div class="col-sm-7">
+            <div class="page-header float-left">
+                <div class="page-title">
+                    <h1>Session</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header-->
+
     
+    <div class="container col-lg-12">
+        <div class="row">
+
+    <div class="col-lg-6">
+        <div class="card">
 
 
+        <div class="card-body">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link " id="pills-home-tab" href="createSessions.html" role="tab" aria-controls="pills-home" aria-selected="false">Sessions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-home-tab" href="consecutiveSessions.html" role="tab" aria-controls="pills-home" aria-selected="false">Consecutive Session</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="pills-profile-tab" href="parallelSessions.html" role="tab" aria-controls="pills-profile" aria-selected="false">Parallel Session</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-contact-tab" href="notOverlap.html" role="tab" aria-controls="pills-contact" aria-selected="false">Not Overlap Session</a>
+                </li>
+                </li>
+            </ul>
 
-	
-
-                                            
-
-
-           <div class="col">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-home-tab" href="createSessions.html" role="tab" aria-controls="pills-home" aria-selected="false">Sessions</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " id="pills-home-tab" href="consecutiveSessions.html" role="tab" aria-controls="pills-home" aria-selected="false">Consecutive Session</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " id="pills-profile-tab" href="parallelSessions.html" role="tab" aria-controls="pills-profile" aria-selected="false">Parallel Session</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-contact-tab" href="notOverlap.html" role="tab" aria-controls="pills-contact" aria-selected="false">Not Overlap Session</a>
-                                </li>
-                                </li>
-                            </ul>
+        </div>
                             <div class="card-header">
                                 <strong>Sessions that should not overlap</strong>
                             </div>
@@ -319,7 +328,6 @@
 
 </div>
                 </div>
-                <div class="container">
                   <div class="row">
                     <div class="col-lg-7">
                         <ul id="notovList"></ul>

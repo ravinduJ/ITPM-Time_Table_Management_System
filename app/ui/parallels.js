@@ -65,11 +65,12 @@ function renderParallelss(parallelss) {
           ${t.session_5}
           </div>
             </td style="padding-left: 20px">
-          <td><button class="btn btn-danger" onclick="deleteParallels('${t._id}')">
-          🗑 Delete
-        </button></td>
-          <td><button class="btn btn-secondary" onclick="editParallels('${t._id}')">
+            <td><button class="btn btn-primary btn-sm" onclick="editParallels('${t._id}')">
           ✎ Edit
+          
+        </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteParallels('${t._id}')">
+        🗑 Delete
         </button></td>
         </tr>
       </tbody>

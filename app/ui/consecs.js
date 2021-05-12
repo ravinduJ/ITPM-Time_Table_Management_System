@@ -44,11 +44,12 @@ function renderConsecss(consecss) {
           <td>${t.description}</td>
           <td>${t.first_session}</td>
           <td>${t.second_session}</td>
-          <td><button class="btn btn-danger" onclick="deleteConsecs('${t._id}')">
-          🗑 Delete
-        </button></td>
-          <td><button class="btn btn-secondary" onclick="editConsecs('${t._id}')">
+         
+          <td><button class="btn btn-primary btn-sm" onclick="editConsecs('${t._id}')">
           ✎ Edit
+        </button></td>
+        <td><button class="btn btn-danger btn-sm" onclick="deleteConsecs('${t._id}')">
+        🗑 Delete
         </button></td>
         </tr>
       </tbody>

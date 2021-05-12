@@ -48,7 +48,7 @@ function renderNotavgros(notavgros) {
               <td style="width:100px; display:inline-block; overflow:hidden">${t.starting_time_hour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.ending_time_hour}</td>
               <td style="width:200px; display:inline-block; overflow:hidden">
-              <td><button class="btn btn-secondary btn-sm" onclick="editNotavgro('${t._id}')">
+              <td><button class="btn btn-primary btn-sm" onclick="editNotavgro('${t._id}')">
         ✎ Edit
       </button></td>
         <td><button class="btn btn-danger btn-sm" onclick="deleteNotavgro('${t._id}')">
