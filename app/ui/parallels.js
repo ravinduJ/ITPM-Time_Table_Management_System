@@ -40,19 +40,31 @@ function renderParallelss(parallelss) {
         <table class="table table-dark">
             <thead>
             <tr>
-            <th scope="col">Description</th>
-            <th scope="col">Sessions</th>
+            <th scope="col" >Description</th>
+            <th scope="col" >Sessions</th>
             </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>${t.description}</td>
+        <tr >
+          <td style="padding-left: 20px">${t.description}</td>
           <td>
-        ${t.session_1}
-        ${t.session_2}
-        ${t.session_3}
-        ${t.session_4}
-            ${t.session_5}</td>
+          <div class="row">
+          ${t.session_1}
+          </div>
+          <div class="row">
+          ${t.session_2}
+          </div>
+
+          <div class="row">
+          ${t.session_3}
+          </div>
+          <div class="row">
+          ${t.session_4}
+          </div>
+          <div class="row">
+          ${t.session_5}
+          </div>
+            </td style="padding-left: 20px">
           <td><button class="btn btn-danger" onclick="deleteParallels('${t._id}')">
           🗑 Delete
         </button></td>

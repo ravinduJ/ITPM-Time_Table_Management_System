@@ -35,8 +35,8 @@ function renderConsecss(consecss) {
             <thead>
             <tr>
             <th scope="col">Description</th>
-            <th scope="col">1Session</th>
-            <th scope="col">2Session</th>
+            <th scope="col">Session 01</th>
+            <th scope="col">Session 02</th>
             </tr>
         </thead>
         <tbody>

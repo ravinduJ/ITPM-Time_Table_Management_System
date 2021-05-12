@@ -48,11 +48,12 @@ function renderNotovs(notovs) {
         <tr>
         <td>${t.description}</td>
         <td>
-      ${t.session_1}
-      ${t.session_2}
-      ${t.session_3}
-      ${t.session_4}
-          ${t.session_5}</td>
+        <div class="row">${t.session_1}</div>
+        <div class="row">${t.session_2}</div>
+        <div class="row">${t.session_3}</div>
+        <div class="row">${t.session_4}</div>
+        <div class="row">${t.session_5}</div>
+          </td>
           <td><button class="btn btn-danger" onclick="deleteNotov('${t._id}')">
           🗑 Delete
         </button></td>

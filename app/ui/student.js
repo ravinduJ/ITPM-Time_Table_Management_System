@@ -52,11 +52,11 @@ function renderStudents(students) {
         <td style="width:100px; display:inline-block; overflow:hidden;">${t.group_count}</td>
         <td style="width:100px; display:inline-block; overflow:hidden;">${t.sub_group_count}</td>
         <td style="width:250px; display:inline-block; overflow:hidden;">
-        <button class="btn btn-btn btn-outline-success" onclick="editStudent('${t._id}')">
-       Edit
+        <button class="btn btn-primary btn-sm" onclick="editStudent('${t._id}')">
+        ✎ Edit
     </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteStudent('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteStudent('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>
