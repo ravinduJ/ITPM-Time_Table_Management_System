@@ -2499,6 +2499,8 @@ header .form-inline {
 }
 
 .loc{
+  width:100.5% !important;
+}
 
 .col1{
   width:100.5% !important;
