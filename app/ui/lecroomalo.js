@@ -25,10 +25,10 @@ function editLecroomalo(id) {
 }
 
 function renderLecroomalos(lecroomalos) {
-  lecroomaloList.innerHTML = `<table class="table table-striped">
+  lecroomaloList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">Name</th>
+          <th style="width:200px; display:inline-block; overflow:hidden">Name</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Room</th>
 
           </tr>
@@ -38,17 +38,17 @@ function renderLecroomalos(lecroomalos) {
   console.log(lecroomalos);
   lecroomalos.map((t) => {
     lecroomaloList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.room}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden">${t.room}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.lecturer}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editLecroomalo('${t._id}')">
-       Edit
+        <button class="btn btn-primary btn-sm" onclick="editLecroomalo('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteLecroomalo('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteLecroomalo('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>   

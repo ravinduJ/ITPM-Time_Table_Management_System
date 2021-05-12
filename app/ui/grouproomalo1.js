@@ -25,7 +25,7 @@ function editGrouproomalo1(id) {
 }
 
 function renderGrouproomalo1s(grouproomalo1s) {
-  grouproomalo1List1.innerHTML = `<table class="table table-striped">
+  grouproomalo1List1.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:100px; display:inline-block; overflow:hidden">Group</th>
@@ -37,17 +37,17 @@ function renderGrouproomalo1s(grouproomalo1s) {
   console.log(grouproomalo1s);
   grouproomalo1s.map((t) => {
     grouproomalo1List1.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.group1}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.room1}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editGrouproomalo1('${t._id}')">
-       Edit
+        <button class="btn btn-primary btn-sm" onclick="editGrouproomalo1('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteGrouproomalo1('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteGrouproomalo1('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>   

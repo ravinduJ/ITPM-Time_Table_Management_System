@@ -29,10 +29,10 @@ function editRoom(id) {
 }
 
 function renderRooms(rooms) {
-  roomList.innerHTML = `<table class="table table-striped">
+  roomList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">B-Name</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">B-Name</th>
           <th style="width:60px; display:inline-block; overflow:hidden">Room</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Capacity</th>
           <th style="width:220px; display:inline-block; overflow:hidden">Type</th>
@@ -45,19 +45,19 @@ function renderRooms(rooms) {
   console.log(rooms);
   rooms.map((t) => {
     roomList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.buildingName}</td>
+        <td style="width:150px; display:inline-block; overflow:hidden">${t.buildingName}</td>
         <td style="width:60px; display:inline-block; overflow:hidden">${t.roomName}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.categoty}</td>
         <td style="width:150px; display:inline-block; overflow:hidden">${t.type}</td>
-        <td style="width:160px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editRoom('${t._id}')">
-       Edit
+        <td style="width:250px; display:inline-block; overflow:hidden">
+        <button class="btn btn-primary btn-sm" onclick="editRoom('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteRoom('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteRoom('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>

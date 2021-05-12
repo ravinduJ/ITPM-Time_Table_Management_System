@@ -29,13 +29,13 @@ function editBusytime(id) {
 }
 
 function renderBusytimes(busytimes) {
-  busytimeList.innerHTML = `<table class="table table-striped">
+  busytimeList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
           <th style="width:70px; display:inline-block; overflow:hidden">Room</th>
-          <th style="width:80px; display:inline-block; overflow:hidden">Date</th>
-          <th style="width:110px; display:inline-block; overflow:hidden">STime</th>
-          <th style="width:150px; display:inline-block; overflow:hidden">ETime</th>
+          <th style="width:120px; display:inline-block; overflow:hidden">Date</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">Starting Time</th>
+          <th style="width:150px; display:inline-block; overflow:hidden">Ending time </th>
           </tr>
         </thead>
         </table>
@@ -43,19 +43,19 @@ function renderBusytimes(busytimes) {
   console.log(busytimes);
   busytimes.map((t) => {
     busytimeList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
       <tr>
         <td style="width:70px; display:inline-block; overflow:hidden">${t.room}</td>
-        <td style="width:80px; display:inline-block; overflow:hidden">${t.date}</td>
-        <td style="width:110px; display:inline-block; overflow:hidden">${t.starting_time}</td>
-        <td style="width:110px; display:inline-block; overflow:hidden">${t.ending_time}</td>
+        <td style="width:120px; display:inline-block; overflow:hidden">${t.date}</td>
+        <td style="width:150px; display:inline-block; overflow:hidden">${t.starting_time}</td>
+        <td style="width:150px; display:inline-block; overflow:hidden">${t.ending_time}</td>
         <td style="width:300px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editBusytime('${t._id}')">
-       Edit
+        <button class="btn btn-primary btn-sm" onclick="editBusytime('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteBusytime('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteBusytime('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>
