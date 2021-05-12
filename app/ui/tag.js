@@ -23,11 +23,12 @@ function editTag(id) {
 }
 
 function renderTags(tags) {
-  tagList.innerHTML = `<table class="table table-striped">
+  tagList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:100px; display:inline-block; overflow:hidden">Tags</th>
-          <th style="width:200px; display:inline-block; overflow:hidden"></th>
+          <th style="width:200px; display:inline-block; overflow:hidden">Tags</th>
+          <th style="width:200px; display:inline-block; overflow:hidden">Module Code</th>
+          <th style="width:200px; display:inline-block; overflow:hidden">Module Name</th>
           </tr>
         </thead>
         </table>
@@ -35,16 +36,18 @@ function renderTags(tags) {
   console.log(tags);
   tags.map((t) => {
     tagList.innerHTML += `
-    <table class="table table-striped">
+    <table class="table table-dark">
     <tbody>
-      <tr>
-        <td style="width:100px; display:inline-block; overflow:hidden">${t.tagSelect}</td>
-        <td style="width:200px; display:inline-block; overflow:hidden">
-        <button class="btn btn-btn btn-outline-success" onclick="editTag('${t._id}')">
-       Edit
+      <tr  class="p-4">
+        <td style="width:200px; display:inline-block; overflow:hidden">${t.tagSelect}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden">${t.tagSelect}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden">${t.tagSelect}</td>
+        <td style="width:200px; display:inline-block; overflow:hidden; padding:10px">
+        <button class="btn btn-primary btn-sm p-6" onclick="editTag('${t._id}')">
+        ✎ Edit
       </button>
-        <button class="btn btn-btn btn-outline-danger" onclick="deleteTag('${t._id}')">
-        Delete
+        <button class="btn btn-danger btn-sm" onclick="deleteTag('${t._id}')">
+        🗑 Delete
       </button>
     </td>
       </tr>   
