@@ -27,8 +27,7 @@ function renderTags(tags) {
   <thead>
           <tr>
           <th style="width:200px; display:inline-block; overflow:hidden">Tags</th>
-          <th style="width:200px; display:inline-block; overflow:hidden">Module Code</th>
-          <th style="width:200px; display:inline-block; overflow:hidden">Module Name</th>
+        
           </tr>
         </thead>
         </table>
