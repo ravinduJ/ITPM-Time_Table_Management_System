@@ -28,7 +28,7 @@ function renderGrouproomalo3s(grouproomalo3s) {
   grouproomalo3List3.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:400px; display:inline-block; overflow:hidden">Session</th>
+          <th style="width:400px; display:inline-block; overflow:hidden">Consecutive Session</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Room</th>
           </tr>
         </thead>

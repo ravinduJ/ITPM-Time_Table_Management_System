@@ -28,7 +28,7 @@ function renderLecroomalos(lecroomalos) {
   lecroomaloList.innerHTML = `<table class="table table-dark">
   <thead>
           <tr>
-          <th style="width:200px; display:inline-block; overflow:hidden">Name</th>
+          <th style="width:250px; display:inline-block; overflow:hidden">Lecturer Name</th>
           <th style="width:100px; display:inline-block; overflow:hidden">Room</th>
 
           </tr>
@@ -41,7 +41,7 @@ function renderLecroomalos(lecroomalos) {
     <table class="table table-dark">
     <tbody>
       <tr>
-        <td style="width:200px; display:inline-block; overflow:hidden">${t.room}</td>
+        <td style="width:250px; display:inline-block; overflow:hidden">${t.room}</td>
         <td style="width:100px; display:inline-block; overflow:hidden">${t.lecturer}</td>
         <td style="width:200px; display:inline-block; overflow:hidden">
         <button class="btn btn-primary btn-sm" onclick="editLecroomalo('${t._id}')">
