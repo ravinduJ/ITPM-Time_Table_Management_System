@@ -43,7 +43,7 @@ function renderMin30s(min30s) {
               <td style="width:100px; display:inline-block; overflow:hidden">${t.startingHour}</td>
               <td style="width:100px; display:inline-block; overflow:hidden">${t.endingHour}</td>
               <td style="width:250px; display:inline-block; overflow:hidden">
-              <td><button class="btn btn-secondary btn-sm" onclick="editMin30('${t._id}')">
+              <td><button class="btn btn-primary btn-sm" onclick="editMin30('${t._id}')">
         ✎ Edit
       </button></td>
         <td><button class="btn btn-danger btn-sm" onclick="deleteMin30('${t._id}')">
